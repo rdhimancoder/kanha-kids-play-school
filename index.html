@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Kanha Kids Play School - Nurturing Curiosity, Inspiring Joy</title>
+    <meta name="description" content="Kanha Kids Play School provides a joyful, safe, and play-based learning environment for toddlers, nursery, and kindergarten children."/>
+    
+    <!-- External Frameworks & Fonts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind Config adhering to Cheerful Learning Design Tokens -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#50616b",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#e0f2fe",
+                        "on-primary-container": "#5e6f79",
+                        "primary-fixed": "#d3e5f1",
+                        "primary-fixed-dim": "#b7c9d5",
+                        "on-primary-fixed": "#0c1e26",
+                        "on-primary-fixed-variant": "#384953",
+                        "inverse-primary": "#b7c9d5",
+                        
+                        "secondary": "#695f02",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#f2e580",
+                        "on-secondary-container": "#6f650a",
+                        "secondary-fixed": "#f2e580",
+                        "secondary-fixed-dim": "#d5c867",
+                        "on-secondary-fixed": "#201c00",
+                        "on-secondary-fixed-variant": "#4f4800",
+                        
+                        "tertiary": "#486554",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#d7f7e2",
+                        "on-tertiary-container": "#567362",
+                        "tertiary-fixed": "#caead6",
+                        "tertiary-fixed-dim": "#afceba",
+                        "on-tertiary-fixed": "#042014",
+                        "on-tertiary-fixed-variant": "#314d3e",
+                        
+                        "accent-orange": "#f97316",
+                        "accent-orange-dark": "#ea580c",
+
+                        "background": "#f8f9ff",
+                        "on-background": "#0d1c2e",
+                        
+                        "surface": "#f8f9ff",
+                        "surface-dim": "#ccdbf3",
+                        "surface-bright": "#f8f9ff",
+                        "surface-variant": "#d5e3fc",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container": "#e6eeff",
+                        "surface-container-high": "#dce9ff",
+                        "surface-container-highest": "#d5e3fc",
+                        "on-surface": "#0d1c2e",
+                        "on-surface-variant": "#43474b",
+                        "inverse-surface": "#233144",
+                        "inverse-on-surface": "#eaf1ff",
+                        
+                        "outline": "#73787b",
+                        "outline-variant": "#c3c7cb",
+                        "surface-tint": "#50616b",
+                        
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "sm": "0.25rem",
+                        "md": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "2xl": "1.5rem",
+                        "3xl": "2rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "xs": "4px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "md": "24px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "xl": "80px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px"
+                    },
+                    fontFamily: {
+                        "caption": ["Be Vietnam Pro", "sans-serif"],
+                        "body-md": ["Be Vietnam Pro", "sans-serif"],
+                        "body-lg": ["Be Vietnam Pro", "sans-serif"],
+                        "label-md": ["Be Vietnam Pro", "sans-serif"],
+                        "headline-md": ["Quicksand", "sans-serif"],
+                        "headline-lg": ["Quicksand", "sans-serif"],
+                        "display-lg": ["Quicksand", "sans-serif"],
+                        "headline-lg-mobile": ["Quicksand", "sans-serif"]
+                    },
+                    fontSize: {
+                        "caption": ["12px", { lineHeight: "16px", fontWeight: "500" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "label-md": ["14px", { lineHeight: "20px", fontWeight: "600" }],
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+                        "headline-lg-mobile": ["28px", { lineHeight: "36px", fontWeight: "700" }],
+                        "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            user-select: none;
+        }
+        .material-symbols-outlined.fill,
+        [data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .soft-shadow {
+            box-shadow: 0 12px 32px rgba(80, 97, 107, 0.06);
+        }
+        .soft-shadow-lg {
+            box-shadow: 0 20px 40px rgba(80, 97, 107, 0.1);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px rgba(80, 97, 107, 0.1);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #eff4ff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b7c9d5;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #50616b;
+        }
+
+        /* Tactile button press effects */
+        .btn-press {
+            transition: all 0.15s ease-in-out;
+        }
+        .btn-press:active {
+            transform: translateY(2px);
+        }
+
+        /* FAQ details styling */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Gallery masonry column layouts */
+        .gallery-masonry {
+            column-count: 1;
+            column-gap: 24px;
+        }
+        @media (min-width: 640px) {
+            .gallery-masonry { column-count: 2; }
+        }
+        @media (min-width: 1024px) {
+            .gallery-masonry { column-count: 3; }
+        }
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 24px;
+            display: block;
+        }
+        .gallery-item.hidden-item {
+            display: none !important;
+        }
+
+        /* Floating pulse animation */
+        @keyframes gentle-float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .floating-badge {
+            animation: gentle-float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-primary">
+
+    <!-- ================= TOP NAVIGATION BAR ================= -->
+    <header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-primary-container/40 shadow-sm transition-all duration-200" id="mainHeader">
+        <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-base max-w-[1280px] mx-auto w-full">
+            <!-- Brand Logo -->
+            <a class="flex items-center gap-2 font-display-lg text-headline-md text-primary font-bold tracking-tight group" href="#home">
+                <span class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm group-hover:rotate-12 transition-transform">
+                    <span class="material-symbols-outlined fill text-2xl">child_care</span>
+                </span>
+                <span>Kanha Kids <span class="text-xs font-label-md font-medium text-secondary hidden sm:inline-block px-2 py-0.5 bg-secondary-container rounded-full ml-1">Play School</span></span>
+            </a>
+
+            <!-- Desktop Nav Links (ScrollSpy enabled) -->
+            <nav class="hidden md:flex items-center gap-6 lg:gap-8" id="desktopNav">
+                <a class="nav-link text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md transition-all duration-200" href="#home" data-target="home">Home</a>
+                <a class="nav-link text-on-surface-variant hover:text-primary pb-1 font-label-md text-label-md font-medium transition-all duration-200" href="#about" data-target="about">About Us</a>
+                <a class="nav-link text-on-surface-variant hover:text-primary pb-1 font-label-md text-label-md font-medium transition-all duration-200" href="#programs" data-target="programs">Programs</a>
+                <a class="nav-link text-on-surface-variant hover:text-primary pb-1 font-label-md text-label-md font-medium transition-all duration-200" href="#gallery" data-target="gallery">Gallery</a>
+                <a class="nav-link text-on-surface-variant hover:text-primary pb-1 font-label-md text-label-md font-medium transition-all duration-200" href="#admissions" data-target="admissions">Admissions</a>
+            </nav>
+
+            <!-- Action Controls -->
+            <div class="flex items-center gap-3">
+                <!-- CTA Button -->
+                <button onclick="openTourModal()" class="hidden md:inline-flex items-center gap-2 bg-[#f28e2b] text-white px-5 py-2.5 rounded-full font-label-md text-label-md hover:bg-[#ea580c] shadow-[0_2px_0_0_#c2410c] active:shadow-none btn-press font-semibold transition-all">
+                    <span class="material-symbols-outlined text-lg">event_available</span>
+                    Schedule a Tour
+                </button>
+
+                <!-- Mobile Menu Hamburger Button -->
+                <button id="mobileMenuBtn" aria-label="Open mobile menu" class="md:hidden p-2 rounded-xl text-primary hover:bg-surface-container-low transition-colors">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div id="mobileMenuOverlay" class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300">
+        <div id="mobileMenuDrawer" class="absolute top-0 right-0 w-4/5 max-w-sm h-full bg-surface shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-out">
+            <div>
+                <div class="flex justify-between items-center pb-4 border-b border-primary-container/30">
+                    <div class="flex items-center gap-2 font-display-lg text-headline-md text-primary font-bold">
+                        <span class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                            <span class="material-symbols-outlined fill text-xl">child_care</span>
+                        </span>
+                        <span>Kanha Kids</span>
+                    </div>
+                    <button id="closeMobileMenuBtn" aria-label="Close menu" class="p-2 text-on-surface-variant hover:text-primary rounded-full">
+                        <span class="material-symbols-outlined text-2xl">close</span>
+                    </button>
+                </div>
+                <div class="flex flex-col gap-4 mt-6">
+                    <a class="mobile-nav-link text-primary font-bold text-lg py-2 border-b border-primary-container/20 flex items-center justify-between" href="#home" onclick="closeMobileMenu()">
+                        <span>Home</span>
+                        <span class="material-symbols-outlined text-sm">chevron_right</span>
+                    </a>
+                    <a class="mobile-nav-link text-on-surface-variant font-medium text-lg py-2 border-b border-primary-container/20 flex items-center justify-between" href="#about" onclick="closeMobileMenu()">
+                        <span>About Us</span>
+                        <span class="material-symbols-outlined text-sm">chevron_right</span>
+                    </a>
+                    <a class="mobile-nav-link text-on-surface-variant font-medium text-lg py-2 border-b border-primary-container/20 flex items-center justify-between" href="#programs" onclick="closeMobileMenu()">
+                        <span>Programs</span>
+                        <span class="material-symbols-outlined text-sm">chevron_right</span>
+                    </a>
+                    <a class="mobile-nav-link text-on-surface-variant font-medium text-lg py-2 border-b border-primary-container/20 flex items-center justify-between" href="#gallery" onclick="closeMobileMenu()">
+                        <span>Gallery</span>
+                        <span class="material-symbols-outlined text-sm">chevron_right</span>
+                    </a>
+                    <a class="mobile-nav-link text-on-surface-variant font-medium text-lg py-2 border-b border-primary-container/20 flex items-center justify-between" href="#admissions" onclick="closeMobileMenu()">
+                        <span>Admissions</span>
+                        <span class="material-symbols-outlined text-sm">chevron_right</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-3 pt-6 border-t border-primary-container/30">
+                <button onclick="closeMobileMenu(); openTourModal();" class="w-full bg-[#f28e2b] text-white py-3 rounded-full font-label-md font-bold shadow-md hover:bg-[#ea580c] btn-press text-center flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined">event_available</span> Schedule a Tour
+                </button>
+                <div class="text-center text-xs text-on-surface-variant opacity-70">
+                    Call: (555) 123-4567 • helpdesk@kkps.com
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="flex-grow w-full">
+
+        <!-- ================= SECTION 1: HOME ================= -->
+        <section id="home" class="scroll-mt-20">
+            <!-- Dedicated Hero Banner Container (School Building Background ONLY here) -->
+            <div class="relative pt-8 md:pt-16 pb-16 md:pb-20 px-margin-mobile md:px-margin-desktop overflow-hidden isolate border-b border-primary-container/20">
+                <!-- Blurred School Building Background Image -->
+                <div class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
+                    <img src="./school_building_bg.jpg" alt="Kanha Kids School Building Background" class="w-full h-full object-cover filter blur-[1px] scale-100 opacity-100"/>
+                    <!-- Soft directional gradient wash for crystal-clear readability -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/75 to-surface/40"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface/20 to-surface"></div>
+                </div>
+
+                <!-- Decorative Ambient Background Blobs -->
+                <div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/30 rounded-full blur-3xl z-0 pointer-events-none"></div>
+                <div class="absolute bottom-10 left-[-50px] w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl z-0 pointer-events-none"></div>
+
+                <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center relative z-10">
+                    <!-- Left Hero Content -->
+                    <div class="flex flex-col gap-5 z-10 text-left">
+                        <div class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-3.5 py-1.5 rounded-full w-max font-caption text-caption shadow-sm">
+                            <span class="material-symbols-outlined fill text-[16px] text-tertiary">stars</span>
+                            <span class="font-semibold">Enrolling for Academic Year 2024-2025</span>
+                        </div>
+
+                        <h1 class="font-display-lg text-display-lg max-md:text-headline-lg-mobile text-on-surface tracking-tight leading-tight">
+                            Where Learning is an <span class="text-secondary relative whitespace-nowrap">Adventure!<svg class="absolute w-full h-3 -bottom-1 left-0 text-secondary-container opacity-80" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="4"></path></svg></span>
+                        </h1>
+
+                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                            We nurture your child's natural curiosity and joy for learning in a safe, play-based environment designed to help them grow socially, emotionally, and academically.
+                        </p>
+
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <a href="#admissions" class="inline-flex items-center justify-center gap-2 bg-secondary text-on-secondary font-label-md text-label-md px-6 py-3.5 rounded-full shadow-[0_2px_0_0_#4f4800] active:shadow-none btn-press font-semibold">
+                                <span>Enroll Now</span>
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                            <a href="#programs" class="inline-flex items-center justify-center gap-2 bg-primary-container text-on-primary-container font-label-md text-label-md px-6 py-3.5 rounded-full border border-primary/20 hover:bg-surface-container-high active:shadow-none btn-press font-semibold transition-all">
+                                <span>Our Programs</span>
+                                <span class="material-symbols-outlined text-sm">expand_more</span>
+                            </a>
+                        </div>
+
+                        <!-- Trust Stats Bar -->
+                        <div class="grid grid-cols-3 gap-3 pt-4 border-t border-primary-container/30">
+                            <div>
+                                <p class="font-headline-md text-primary text-2xl font-bold">1:8</p>
+                                <p class="font-caption text-xs text-on-surface-variant">Teacher Ratio</p>
+                            </div>
+                            <div>
+                                <p class="font-headline-md text-primary text-2xl font-bold">100%</p>
+                                <p class="font-caption text-xs text-on-surface-variant">Safe &amp; Monitored</p>
+                            </div>
+                            <div>
+                                <p class="font-headline-md text-primary text-2xl font-bold">12+</p>
+                                <p class="font-caption text-xs text-on-surface-variant">Years of Joy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Image with Tactile Layering -->
+                    <div class="relative z-10 w-full h-[360px] sm:h-[420px] md:h-[500px]">
+                        <div class="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform rotate-1 hover:rotate-0 transition-transform duration-500 ease-out">
+                            <img class="w-full h-full object-cover" alt="Toddlers playing safely in vibrant classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCWYFZNCntALF61SV6ERL_pJwpFyEUUzbkvvIsjnncwKw3EbzPv8v1Lg2L-QzrAe7AYADkyHI_ZDErjTuixym8SwD8VKYXxQzIyXPuBBQDPFK3SOVNte8OZbYs-VmRzN_aK-XWdlmMFdoc99SmTmI8mvFX9KpJ1jo0NRze2qMXl4pMhquD8OwUa_6Plic0N7YUFsGhJ92I1uceuFylx-Jf7uvTMKOVN2jYMRi6rvE8mLCe2nQ3BaNW"/>
+                        </div>
+                        
+                        <!-- Floating Parent Trust Badge -->
+                        <div class="absolute -bottom-4 -left-4 sm:bottom-4 sm:-left-6 bg-surface p-3.5 rounded-2xl soft-shadow-lg border border-primary-container/60 flex items-center gap-3 floating-badge z-20">
+                            <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+                                <span class="material-symbols-outlined fill text-2xl">family_restroom</span>
+                            </div>
+                            <div>
+                                <p class="font-label-md text-label-md text-on-surface font-bold">Trusted by</p>
+                                <p class="font-caption text-caption text-secondary font-semibold">500+ Happy Families</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Certified Badge -->
+                        <div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-tertiary-container shadow-sm flex items-center gap-1.5 text-tertiary font-label-md text-xs font-bold">
+                            <span class="material-symbols-outlined fill text-base">verified</span>
+                            ECE Certified
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home Subsections (Clean Surface Backgrounds) -->
+            <div class="px-margin-mobile md:px-margin-desktop py-16">
+                <!-- Why Parents Choose Us Cards -->
+                <div class="max-w-[1280px] mx-auto">
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="text-xs uppercase tracking-wider font-bold text-secondary bg-secondary-container px-3 py-1 rounded-full">Our Core Advantage</span>
+                        <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-2">Why Parents Choose Our School?</h2>
+                        <p class="font-body-md text-on-surface-variant">Our holistic approach ensures every child feels valued, safe, and excited to learn every single day.</p>
+                    </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Feature Card 1 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-primary-container/40 soft-shadow card-hover flex flex-col items-start gap-4">
+                        <div class="w-14 h-14 rounded-2xl bg-tertiary-container flex items-center justify-center text-on-tertiary-container shadow-sm">
+                            <span class="material-symbols-outlined fill text-3xl">health_and_safety</span>
+                        </div>
+                        <div>
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Safe Environment</h3>
+                            <p class="font-body-md text-on-surface-variant text-sm">State-of-the-art security, sanitized spaces, child-proofed zones, and dedicated care staff ensure your child's well-being is always our top priority.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-primary-container/40 soft-shadow card-hover flex flex-col items-start gap-4">
+                        <div class="w-14 h-14 rounded-2xl bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+                            <span class="material-symbols-outlined fill text-3xl">extension</span>
+                        </div>
+                        <div>
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Play-Based Learning</h3>
+                            <p class="font-body-md text-on-surface-variant text-sm">Our curriculum focuses on experiential learning, fostering creativity, sensory discovery, and cognitive development through guided play.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-primary-container/40 soft-shadow card-hover flex flex-col items-start gap-4">
+                        <div class="w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm">
+                            <span class="material-symbols-outlined fill text-3xl">school</span>
+                        </div>
+                        <div>
+                            <h3 class="font-headline-md text-headline-md text-on-surface mb-2">Expert Teachers</h3>
+                            <p class="font-body-md text-on-surface-variant text-sm">Our highly qualified educators are passionate about early childhood development and provide caring, personalized attention.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meet Our Teachers -->
+            <div class="max-w-[1280px] mx-auto mt-20">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-xs uppercase tracking-wider font-bold text-primary bg-primary-container px-3 py-1 rounded-full">Dedicated Mentors</span>
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-2">Meet Our Teachers</h2>
+                    <p class="font-body-md text-on-surface-variant">Passionate educators dedicated to making every day special for your little ones.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <!-- Teacher 1 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 border border-primary-container/50 text-center flex flex-col items-center gap-3 soft-shadow card-hover">
+                        <div class="w-28 h-28 rounded-full overflow-hidden mb-2 border-4 border-primary-container shadow-md">
+                            <img alt="Sarah Johnson" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcre46VhzEa6lv-_UOMDKsfOsm0M7Kf7ol3Jp0U38eL8WszSpM_zsQsipYYDhYRdJmjUb-O_k5BCMQUvqbfyxI_AaFkh6MqMVbVg-kIpszw_nkUyAiPZ3U0tC7WX1B31Soe6BmsNnjUPUeU7H5DreKeWS12di6-YGUrdTxmHL1R_wTA26t41Q-oAIa0q0QBKtZ031qrbEpZSQT91A-GReBR87g2i5hafq-xTVKFjKoA1hCsfdTPuKj"/>
+                        </div>
+                        <h3 class="font-headline-md text-[20px] text-on-surface font-bold">Ms. Savita Nehra</h3>
+                        <span class="font-label-md text-secondary bg-secondary-container/60 px-3 py-0.5 rounded-full text-xs font-semibold">Lead Pre-K Teacher</span>
+                        <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1">With 8+ years of experience, Sarah brings stories to life and nurtures young imaginations through creative art and rhythm.</p>
+                    </div>
+
+                    <!-- Teacher 2 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 border border-primary-container/50 text-center flex flex-col items-center gap-3 soft-shadow card-hover">
+                        <div class="w-28 h-28 rounded-full overflow-hidden mb-2 border-4 border-tertiary-container shadow-md">
+                            <img alt="Priya Patel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF48nKhhh6WgxLlOpUrxWsbFdoZBw97WruitDykUa680eWVMkDx4St_E3Tcfoxr0y8kewT3LuVGKjeLx1_jpkLgq4bZL2Eg9p9D3wywx8gG4nPDvj2HBmhfq9eqen1vz28OrEAkMOtVI6XUkrYngM7WpsaxNDv-Rie1diKVxhYjMvXQymLaTS3XaoE6ichAabO4kmjoRPEel7ixH1NNdwkvugzlfqBXNPYxPnXrIar09D8nqvA11kt"/>
+                        </div>
+                        <h3 class="font-headline-md text-[20px] text-on-surface font-bold">Ms. Priya Sharma</h3>
+                        <span class="font-label-md text-tertiary bg-tertiary-container/60 px-3 py-0.5 rounded-full text-xs font-semibold">Toddler Program Lead</span>
+                        <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1">Priya specializes in early sensory development and builds magical exploration environments for our youngest learners.</p>
+                    </div>
+
+                    <!-- Teacher 3 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 border border-primary-container/50 text-center flex flex-col items-center gap-3 soft-shadow card-hover">
+                        <div class="w-28 h-28 rounded-full overflow-hidden mb-2 border-4 border-secondary-container shadow-md">
+                            <img alt="Mr. Karambir Jhorda" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABDRLYvEG-UizOOPaTbpHSz8-UQatp4imnNfcTsiv-gVcBE7VYanNOBZ4HQgQQn3hPdZrNY7FNnGxpbL6XhP0PCyWKH9LryOe000cbtbjdVG1w48XEHvXW8_dOR73I9empRhZWkCnaOp5qMoTtunRFSKnaoA2m__OYu1wbp7yr8YG0nNjhQxgKJLqxqELlxZwSdPD9kQaonBTZF-qhdMX0a9MgyU_uTSYjmNViUXOuwvTcNFcfWsuo"/>
+                        </div>
+                        <h3 class="font-headline-md text-[20px] text-on-surface font-bold">Mr. Karmbir Jhorda</h3>
+                        <span class="font-label-md text-primary bg-primary-container/60 px-3 py-0.5 rounded-full text-xs font-semibold">Physical Activities Guide</span>
+                        <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1">David ensures kids stay active, confident, and healthy while learning teamwork through cooperative games and outdoor motor exercises.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What Parents Say (Testimonials) -->
+            <div class="max-w-[1280px] mx-auto mt-20">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-xs uppercase tracking-wider font-bold text-tertiary bg-tertiary-container px-3 py-1 rounded-full">Community Love</span>
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-2">What Parents Say</h2>
+                    <p class="font-body-md text-on-surface-variant">Hear from the loving families who have joined the Kanha Kids community.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-primary-container/40 soft-shadow flex flex-col gap-4 relative">
+                        <span class="material-symbols-outlined text-secondary opacity-20 text-[56px] absolute top-4 right-4 pointer-events-none">format_quote</span>
+                        <div class="flex text-secondary-fixed-dim">
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                        </div>
+                        <p class="font-body-md text-on-surface italic relative z-10 text-sm sm:text-base leading-relaxed">
+                            "Kanha Kids Play School has been a true blessing. My daughter wakes up excited to go to school every day. The teachers are incredible, compassionate, and attentive."
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-primary-container text-primary flex items-center justify-center font-bold">M</div>
+                            <div>
+                                <p class="font-label-md text-on-surface font-bold">Meena Redhu</p>
+                                <p class="font-caption text-xs text-on-surface-variant">Parent of Ananya (4 yrs)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-primary-container/40 soft-shadow flex flex-col gap-4 relative">
+                        <span class="material-symbols-outlined text-tertiary opacity-20 text-[56px] absolute top-4 right-4 pointer-events-none">format_quote</span>
+                        <div class="flex text-secondary-fixed-dim">
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                        </div>
+                        <p class="font-body-md text-on-surface italic relative z-10 text-sm sm:text-base leading-relaxed">
+                            "The facilities are immaculate and the play-based curriculum has worked wonders for my son's speech and social skills. Highly recommended to all parents!"
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-tertiary-container text-tertiary flex items-center justify-center font-bold">R</div>
+                            <div>
+                                <p class="font-label-md text-on-surface font-bold">Rahul Kaushik</p>
+                                <p class="font-caption text-xs text-on-surface-variant">Parent of Vivaan (3 yrs)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-primary-container/40 soft-shadow flex flex-col gap-4 relative">
+                        <span class="material-symbols-outlined text-primary opacity-20 text-[56px] absolute top-4 right-4 pointer-events-none">format_quote</span>
+                        <div class="flex text-secondary-fixed-dim">
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                            <span class="material-symbols-outlined fill text-yellow-500">star</span>
+                        </div>
+                        <p class="font-body-md text-on-surface italic relative z-10 text-sm sm:text-base leading-relaxed">
+                            "I love receiving daily digital updates and photos of what they are learning. It gives me such peace of mind knowing my child is in loving, capable hands."
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-bold">S</div>
+                            <div>
+                                <p class="font-label-md text-on-surface font-bold">Sneha Singh</p>
+                                <p class="font-caption text-xs text-on-surface-variant">Parent of Diya (2.5 yrs)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- School News & Activities -->
+            <div class="max-w-[1280px] mx-auto mt-20">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8">
+                    <div>
+                        <span class="text-xs uppercase tracking-wider font-bold text-primary bg-primary-container px-3 py-1 rounded-full">School Happenings</span>
+                        <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3">Latest School News</h2>
+                    </div>
+                    <a href="#gallery" class="inline-flex items-center gap-1.5 text-primary font-label-md font-bold hover:underline">
+                        <span>View Gallery Highlights</span>
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- News Card 1 -->
+                    <div class="group bg-surface-container-lowest rounded-2xl overflow-hidden border border-primary-container/40 soft-shadow card-hover flex flex-col">
+                        <div class="h-48 w-full overflow-hidden relative">
+                            <img alt="Annual Day Highlights" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6oWLP20oeb1DuFR3aM68ocKq2nAfAlHbjuOQeZDY1cEK9Rxv2rVxM6xkug0BD2e0Oysw4-P7ySSc8WaoVsEI3PRa5S7OddDU0sgIyKVRKmWsG25fWmu-87iHIhmFkR8xzZSxv35wrPGgM7iNoNCZTwKbjQNguVqcwlA8YenpzHWtebrlj3p9NbelShv6ViqPLsQ71uF69eBwlLIXtrs7r_y3Emdc8zydl6id3YiGBNCHul4LHFbCV"/>
+                        </div>
+                        <div class="p-5 flex flex-col gap-2 flex-grow">
+                            <span class="font-caption text-xs font-semibold text-secondary">March 15, 2024</span>
+                            <h3 class="font-headline-md text-lg text-on-surface font-bold group-hover:text-primary transition-colors">Annual Day Celebrations</h3>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant line-clamp-2">Our little stars put on an unforgettable performance for this year's Annual Day festival themed 'Incredible Journeys'.</p>
+                        </div>
+                    </div>
+
+                    <!-- News Card 2 -->
+                    <div class="group bg-surface-container-lowest rounded-2xl overflow-hidden border border-primary-container/40 soft-shadow card-hover flex flex-col">
+                        <div class="h-48 w-full overflow-hidden relative">
+                            <img alt="New Art Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsCM5LRiBfIu807gtm8S-stY7HPYvh1TF1fY8VgsabS9XzxFy5GMKkEvuXHmKyGjXF_NEQnGT_Lq_dXif-KoMZzZ5AxD2XPJAEcNRrD8YCLv19JqJrEB6hFL-Yd1wZkkE1eUFrEGi4STIVr8QQCyTD1qBKm-DxBGxn3NPyoTRbHe0JOFgz0zRkNaAnzvuWZOlAv-aw5PW1f9jHklXKVHbGFLbIY2pasMyH6PR1IX_XjLKisC3l7SXh"/>
+                        </div>
+                        <div class="p-5 flex flex-col gap-2 flex-grow">
+                            <span class="font-caption text-xs font-semibold text-tertiary">February 28, 2024</span>
+                            <h3 class="font-headline-md text-lg text-on-surface font-bold group-hover:text-primary transition-colors">New Creative Art Studio</h3>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant line-clamp-2">We are thrilled to unveil our dedicated sensory art studio, designed to inspire boundless creativity and tactile discovery.</p>
+                        </div>
+                    </div>
+
+                    <!-- News Card 3 -->
+                    <div class="group bg-surface-container-lowest rounded-2xl overflow-hidden border border-primary-container/40 soft-shadow card-hover flex flex-col">
+                        <div class="h-48 w-full overflow-hidden relative">
+                            <img alt="Spring Nature Walk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2lgnmyDWMXhgP722shTBjTtyd9YRnLwbAbNByJ6UUtzIbOk2s2lYYjp96C6_wwDXfM9jebage47ui7wn1tjcb8uQPtjIVBYH8PIAl2XEpho_kqOfeVJYv4RV6ZYvVvsXuEGd5bU9PAv9-gw3NSvjeRJlUM8XdvuOnXxxxF0GLsdPxoWcTR8DeUhi7bcF3B1ExP-kMG27WW7KbnsLsRW-XLfA2YXDsqxJFmUR7MG80j-V9oDBZYrP"/>
+                        </div>
+                        <div class="p-5 flex flex-col gap-2 flex-grow">
+                            <span class="font-caption text-xs font-semibold text-primary">February 10, 2024</span>
+                            <h3 class="font-headline-md text-lg text-on-surface font-bold group-hover:text-primary transition-colors">Spring Nature Walks</h3>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant line-clamp-2">Our toddlers embarked on weekly guided botanical walks to discover springtime plants, colorful leaves, and local birds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="max-w-[800px] mx-auto mt-20">
+                <div class="text-center mb-8">
+                    <span class="text-xs uppercase tracking-wider font-bold text-secondary bg-secondary-container px-3 py-1 rounded-full">Got Questions?</span>
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-2">Frequently Asked Questions</h2>
+                    <p class="font-body-md text-on-surface-variant">Find quick answers to common questions about admissions, schedules, and daily care.</p>
+                </div>
+
+                <div class="flex flex-col gap-3.5">
+                    <!-- FAQ 1 -->
+                    <details class="group bg-surface-container-lowest rounded-xl border border-primary-container/50 overflow-hidden soft-shadow" open>
+                        <summary class="flex justify-between items-center cursor-pointer p-4 sm:p-5 font-headline-md text-[17px] text-on-surface hover:bg-surface-container-low transition-colors">
+                            <span>What are the school hours and day care options?</span>
+                            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div class="p-4 sm:p-5 pt-0 text-on-surface-variant font-body-md text-sm leading-relaxed border-t border-primary-container/20">
+                            Our regular preschool sessions run from 9:00 AM to 1:00 PM, Monday through Friday. We also provide safe extended day care and after-school enrichment options until 5:00 PM for working parents.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details class="group bg-surface-container-lowest rounded-xl border border-primary-container/50 overflow-hidden soft-shadow">
+                        <summary class="flex justify-between items-center cursor-pointer p-4 sm:p-5 font-headline-md text-[17px] text-on-surface hover:bg-surface-container-low transition-colors">
+                            <span>Is GPS-tracked school transportation available?</span>
+                            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div class="p-4 sm:p-5 pt-0 text-on-surface-variant font-body-md text-sm leading-relaxed border-t border-primary-container/20">
+                            Yes, we operate safe and air-conditioned transport vans equipped with real-time GPS tracking, speed regulators, and female attendants to supervise children door-to-door within a 10km radius.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="group bg-surface-container-lowest rounded-xl border border-primary-container/50 overflow-hidden soft-shadow">
+                        <summary class="flex justify-between items-center cursor-pointer p-4 sm:p-5 font-headline-md text-[17px] text-on-surface hover:bg-surface-container-low transition-colors">
+                            <span>What is the student-to-teacher ratio in classes?</span>
+                            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div class="p-4 sm:p-5 pt-0 text-on-surface-variant font-body-md text-sm leading-relaxed border-t border-primary-container/20">
+                            We maintain an intimate 1:8 ratio for our toddler playgroups and 1:10 for nursery and kindergarten classes. This guarantees personalized attention, emotional warmth, and individual pace matching.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 4 -->
+                    <details class="group bg-surface-container-lowest rounded-xl border border-primary-container/50 overflow-hidden soft-shadow">
+                        <summary class="flex justify-between items-center cursor-pointer p-4 sm:p-5 font-headline-md text-[17px] text-on-surface hover:bg-surface-container-low transition-colors">
+                            <span>Are meals and hygiene protocols provided?</span>
+                            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div class="p-4 sm:p-5 pt-0 text-on-surface-variant font-body-md text-sm leading-relaxed border-t border-primary-container/20">
+                            Yes, we serve fresh, organic mid-morning snacks prepared daily in our certified hygienic kitchen. All play spaces, toys, and restrooms undergo deep sanitization twice daily.
+                        </div>
+                    </details>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SECTION 2: ABOUT US ================= -->
+        <section id="about" class="scroll-mt-20 py-16 px-margin-mobile md:px-margin-desktop bg-surface-container-low/50 border-y border-primary-container/30">
+            <div class="max-w-[1280px] mx-auto">
+                <!-- About Us Hero Banner -->
+                <div class="text-center py-12 md:py-16 bg-surface-container-low rounded-3xl border border-primary-container/50 mb-16 relative overflow-hidden soft-shadow">
+                    <div class="absolute -top-16 -left-16 w-64 h-64 bg-secondary-container rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+                    <div class="absolute -bottom-16 -right-16 w-64 h-64 bg-tertiary-container rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+                    <div class="relative z-10 max-w-3xl mx-auto px-4">
+                        <span class="text-xs uppercase tracking-wider font-bold text-primary bg-primary-container px-3 py-1 rounded-full mb-3 inline-block">Our Story &amp; Philosophy</span>
+                        <h2 class="font-display-lg text-display-lg max-md:text-headline-lg-mobile text-primary mb-4">Nurturing Curiosity,<br/>Inspiring Joy</h2>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                            At Kanha Kids, we believe early childhood is a magical time of discovery. Our mission is to provide a safe, warm, and playful environment where every child feels empowered to explore and grow at their own unique pace.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Our Story Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center mb-20">
+                    <div class="rounded-3xl overflow-hidden soft-shadow-lg border border-primary-container h-[350px] sm:h-[400px]">
+                        <img class="w-full h-full object-cover" alt="Modern preschool sunlit classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVb19bNgDtVrTgXk2TsMM5_MBYz-4mNt5jPU1R-OPufTO3ePyYrK6vTKwW_P6lcIEMjKXErTOtkL6nTs4AVJZqDxffvkl-u-VOCNUXooLuByEVeVh_j2i4UxyHsDjwi72gnbrjVyUswHxLzVIm-5WZZb8FcZNR8WJVK85oIoJJm1KtzZtQq2WXLtBZOP4GIkYCWSDvEixIwVjujiyrRzF9RopktCtxlbJ9NvJtbfmKJQbiZD6Jah7m"/>
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase tracking-wider font-bold text-tertiary bg-tertiary-container px-3 py-1 rounded-full">How We Started</span>
+                        <h3 class="font-headline-lg text-headline-lg text-on-surface mt-3 mb-4">A Place That Feels Like Home</h3>
+                        <p class="font-body-md text-on-surface-variant mb-4 leading-relaxed">
+                            Kanha Kids began with a simple yet profound vision: to create a space that felt like an extension of a loving home. Founded by experienced educators, we noticed a critical need for an early education space that prioritized emotional well-being alongside cognitive development.
+                        </p>
+                        <p class="font-body-md text-on-surface-variant mb-6 leading-relaxed">
+                            What started as a small playgroup has blossomed into a vibrant, trusted community of hundreds of families. We continuously innovate our practices by blending international early childhood standards with deep empathy for each child's innate curiosity.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-2 text-primary font-bold font-headline-md">
+                                <span class="material-symbols-outlined fill text-tertiary">check_circle</span>
+                                Child-First Approach
+                            </div>
+                            <div class="flex items-center gap-2 text-primary font-bold font-headline-md">
+                                <span class="material-symbols-outlined fill text-secondary">check_circle</span>
+                                Safe &amp; Clean Campus
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="mb-20">
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="text-xs uppercase tracking-wider font-bold text-secondary bg-secondary-container px-3 py-1 rounded-full">Guiding Principles</span>
+                        <h3 class="font-headline-lg text-headline-lg text-primary mt-3 mb-2">Our Core Values</h3>
+                        <p class="font-body-md text-on-surface-variant">Four pillars that define the experience of every student at Kanha Kids.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Value 1 -->
+                        <div class="bg-surface-container-lowest p-6 rounded-2xl border border-primary-container soft-shadow card-hover flex flex-col items-center text-center">
+                            <div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-4 shadow-sm">
+                                <span class="material-symbols-outlined fill text-primary text-3xl">diversity_3</span>
+                            </div>
+                            <h4 class="font-headline-md text-lg text-on-surface font-bold mb-1">Community</h4>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant">Fostering a strong, compassionate partnership between educators, parents, and children.</p>
+                        </div>
+
+                        <!-- Value 2 -->
+                        <div class="bg-surface-container-lowest p-6 rounded-2xl border border-tertiary-container soft-shadow card-hover flex flex-col items-center text-center">
+                            <div class="w-16 h-16 rounded-full bg-tertiary-container flex items-center justify-center mb-4 shadow-sm">
+                                <span class="material-symbols-outlined fill text-tertiary text-3xl">psychology</span>
+                            </div>
+                            <h4 class="font-headline-md text-lg text-on-surface font-bold mb-1">Growth</h4>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant">Supporting holistic development across cognitive, physical, emotional, and sensory milestones.</p>
+                        </div>
+
+                        <!-- Value 3 -->
+                        <div class="bg-surface-container-lowest p-6 rounded-2xl border border-secondary-container soft-shadow card-hover flex flex-col items-center text-center">
+                            <div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-4 shadow-sm">
+                                <span class="material-symbols-outlined fill text-secondary text-3xl">palette</span>
+                            </div>
+                            <h4 class="font-headline-md text-lg text-on-surface font-bold mb-1">Creativity</h4>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant">Encouraging free imaginative thinking, artistic play, and joyful self-expression every day.</p>
+                        </div>
+
+                        <!-- Value 4 -->
+                        <div class="bg-surface-container-lowest p-6 rounded-2xl border border-inverse-primary soft-shadow card-hover flex flex-col items-center text-center">
+                            <div class="w-16 h-16 rounded-full bg-inverse-primary flex items-center justify-center mb-4 shadow-sm">
+                                <span class="material-symbols-outlined fill text-on-primary-container text-3xl">health_and_safety</span>
+                            </div>
+                            <h4 class="font-headline-md text-lg text-on-surface font-bold mb-1">Safety</h4>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant">Providing a secure, sanitized, and deeply nurturing physical and emotional environment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership & Senior Educators -->
+                <div>
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="text-xs uppercase tracking-wider font-bold text-primary bg-primary-container px-3 py-1 rounded-full">School Leadership</span>
+                        <h3 class="font-headline-lg text-headline-lg text-primary mt-3 mb-2">Meet Our Leadership Team</h3>
+                        <p class="font-body-md text-on-surface-variant">Experienced professionals directing our educational curriculum and care practices.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <!-- Leader 1 -->
+                        <div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-primary-container soft-shadow card-hover">
+                            <div class="h-52 w-full bg-surface-container-highest">
+                                <img class="w-full h-full object-cover" alt="Sonia Jhorda" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF2UZQfw4r6zrAfn0uBCNuFtkvzJLEixsahiTRmoR-DksTtl48qnlNixK9-BIl1nOHlY-DE7k7hjjbA9OcIEWCskUBEnud-QjvHxVMANG7dBC95mTvLyvfnHOQNtXy-GhMRzn2Vjc9nurpwZErJEpIMF58JS9HcRt5F8ndEEdfhLpbBlzZgJ386eOiEgxAkrWwi5KZLOc8uW9ix790MUA1vwrbRO0XP0UQyJ01mL7Dg43scV8v2xtW"/>
+                            </div>
+                            <div class="p-6 text-center">
+                                <h4 class="font-headline-md text-lg text-on-surface font-bold mb-1">Sonia Jhorda</h4>
+                                <span class="inline-block bg-primary-container text-primary font-caption text-xs px-3 py-1 rounded-full mb-3 font-semibold">Principal &amp; Founder</span>
+                                <p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">With over 15 years in early childhood development, Sarah leads with deep compassion, visionary curriculum design, and warmth.</p>
+                            </div>
+                        </div>
+
+                        <!-- Leader 2 -->
+                        <div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-primary-container soft-shadow card-hover">
+                            <div class="h-52 w-full bg-surface-container-highest">
+                                <img class="w-full h-full object-cover" alt="Mr. Karambir Jhorda" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqz9b1aSUapsX4quUcWje29pkjLD7bDfRi0VtaurQleom1s4yUzj1r5hIPSsiQ5JPYJLUXqaUbWWvtOXzZRv11dbzK983L-yLnaXsaKHRcf3XVutOgDz4FhkopHB9-8FTuKXSAZ2kZBsUHVF5i-KTwSAqrL3jOBJFwG9eLVVc0MW2PZH7p2UNxad8dufubwdLFNqyDk8R6Iki4gxIErkrLwkNTcbf1QYCFei-reOcwwQ_Mda_lQZZO"/>
+                            </div>
+                            <div class="p-6 text-center">
+                                <h4 class="font-headline-md text-lg text-on-surface font-bold mb-1">Mr. Karambir Jhorda</h4>
+                                <span class="inline-block bg-tertiary-container text-tertiary font-caption text-xs px-3 py-1 rounded-full mb-3 font-semibold">Lead Academic Coordinator</span>
+                                <p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">David specializes in sensory integration and progressive arts education, creating an upbeat atmosphere that children adore.</p>
+                            </div>
+                        </div>
+
+                        <!-- Leader 3 -->
+                        <div class="bg-surface-container-lowest rounded-2xl overflow-hidden border border-primary-container soft-shadow card-hover">
+                            <div class="h-52 w-full bg-surface-container-highest">
+                                <img class="w-full h-full object-cover" alt="Sunita Sharma" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOcJbgNu3ikAVfXj332bFO8bCuGvk-NC3ZaVuRK2FbroOZyDpdoZy3IpcD643W9tTvP0szf41cvnPUYghfg4KlWYo1zePbpLTU8d1_O7IyRvzeSIi1VwO8DbpOCIrh3kpLhSFo2jqfX3V70lKH6eCdn3ksH-FL8n3r75mHFNFW5CaaJbMc1tyyfSbsZSI6QHIOzJk1P5l1jUFMqwRaXwHh7ZksTwagoSJNJm2_OXpLdn8U17lZVEGp"/>
+                            </div>
+                            <div class="p-6 text-center">
+                                <h4 class="font-headline-md text-lg text-on-surface font-bold mb-1">Sunita Sharma</h4>
+                                <span class="inline-block bg-secondary-container text-secondary font-caption text-xs px-3 py-1 rounded-full mb-3 font-semibold">Early Years Specialist</span>
+                                <p class="font-body-md text-xs sm:text-sm text-on-surface-variant leading-relaxed">Elena champions early literacy and inclusive social learning environments where every young child finds their confident voice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SECTION 3: PROGRAMS ================= -->
+        <section id="programs" class="scroll-mt-20 py-16 px-margin-mobile md:px-margin-desktop relative">
+            <div class="max-w-[1280px] mx-auto">
+                <!-- Programs Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="bg-tertiary-container text-on-tertiary-container font-caption text-caption py-1.5 px-4 rounded-full inline-flex items-center gap-2 mb-3 shadow-sm font-semibold">
+                        <span class="material-symbols-outlined text-sm">auto_awesome</span>
+                        Discover Our Age-Specific Tracks
+                    </span>
+                    <h2 class="font-display-lg text-display-lg max-md:text-headline-lg-mobile text-primary mb-3">Our Learning Programs</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Thoughtfully tailored developmental stages designed to nurture curiosity, foster empathy, and build foundational academic skills in a joyful environment.
+                    </p>
+                </div>
+
+                <!-- Programs 3-Column Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Toddler Program Card -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-primary-container soft-shadow card-hover relative group flex flex-col justify-between">
+                        <div>
+                            <!-- Program Image Header -->
+                            <div class="h-44 w-full rounded-xl overflow-hidden mb-6 relative">
+                                <img alt="Toddler playgroup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAApummr2tzUtBjsHvGLYVWW_aWh65-i8nvHuAbQ9rNFfDv7l4z6S9V7vBJxUa3AG80doL2MCuKj-_0ML723HD1Qsz3W6iEH8Y0QGMqS11DXQ9uP-E0C6CY7zaADA67tpA_EQIzxEnBjfNdt2UIssiNGUm4122cqVLNzFtymAzEZI-3-q2BddNuYAWiRDrwcP_AWFlHn1Rf0aoA5zXRehgFN43AzaN9pjZYlYm5Wu_WcuYnCJVIee-J"/>
+                                <span class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-secondary border border-secondary-container">Ages 1.5 - 3 yrs</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm">
+                                    <span class="material-symbols-outlined text-xl">toys</span>
+                                </div>
+                                <h3 class="font-headline-md text-xl font-bold text-primary">Toddler Playgroup</h3>
+                            </div>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mb-4">A gentle introduction to school life focusing on sensory exploration and social warmth.</p>
+
+                            <ul class="space-y-2.5 font-body-md text-sm text-on-surface-variant pt-2 border-t border-primary-container/30">
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+                                    <span>Sensory play stations &amp; motor skill development</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+                                    <span>Music, movement, rhythm &amp; story circles</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+                                    <span>Gentle separation support &amp; potty training help</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-primary-container/20">
+                            <button onclick="openTourModal('Toddler Playgroup')" class="w-full bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-white py-2.5 rounded-full font-label-md text-xs font-bold btn-press transition-colors">
+                                Inquire About Toddler Group
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Nursery Program Card -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border-2 border-primary soft-shadow card-hover relative group flex flex-col justify-between">
+                        <div>
+                            <!-- Highlight Tag -->
+                            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 rounded-full shadow-md">
+                                Most Popular
+                            </div>
+
+                            <!-- Program Image Header -->
+                            <div class="h-44 w-full rounded-xl overflow-hidden mb-6 relative mt-1">
+                                <img alt="Nursery children painting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Rx8e-Nmxh-OjKSVKf6RCKmaTveMhm7CsBvSVWnFLvl5SafT8XU1-jcE_6O6UG1GomSYmxgMKPVtImBchOvrarWAVj8FUQ4uD7Sugb8abiajeex3EKTeMI0tFiGCRWkRIgIyIrzarbYl6R0OLFblY5aPy0443Z1eZh0BLjxEhVtXc1afiDJR--JkBJ_6XwLjQoWx6gS3aJGaEhSqif9ZgGx-amNoS6yAsHaOWthNxImEQ-6IG7j8E"/>
+                                <span class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-tertiary border border-tertiary-container">Ages 3 - 4 yrs</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container shadow-sm">
+                                    <span class="material-symbols-outlined text-xl">brush</span>
+                                </div>
+                                <h3 class="font-headline-md text-xl font-bold text-primary">Nursery Program</h3>
+                            </div>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mb-4">Building foundational language, creative curiosity, and active cooperative group play.</p>
+
+                            <ul class="space-y-2.5 font-body-md text-sm text-on-surface-variant pt-2 border-t border-primary-container/30">
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-tertiary text-base mt-0.5 shrink-0">check_circle</span>
+                                    <span>Vocabulary expansion &amp; interactive phonetic fun</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-tertiary text-base mt-0.5 shrink-0">check_circle</span>
+                                    <span>Expressive arts, drama, finger painting &amp; craft</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-tertiary text-base mt-0.5 shrink-0">check_circle</span>
+                                    <span>Collaborative indoor &amp; outdoor playground games</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-primary-container/20">
+                            <button onclick="openTourModal('Nursery Program')" class="w-full bg-[#f28e2b] text-white hover:bg-[#ea580c] py-2.5 rounded-full font-label-md text-xs font-bold btn-press shadow-sm transition-colors">
+                                Inquire About Nursery
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Kindergarten Program Card -->
+                    <div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 border border-primary-container soft-shadow card-hover relative group flex flex-col justify-between">
+                        <div>
+                            <!-- Program Image Header -->
+                            <div class="h-44 w-full rounded-xl overflow-hidden mb-6 relative">
+                                <img alt="Kindergarten interactive learning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnzBQj5TVwX6U_8vXOvLcJ1pRPa3UyXOTTN1ohpL-PkF79GhBevZHwsWjYgWEAZ-2dn7MYxN0DUc7GogGTQiEy83DV-orVW4Co8xGuvrExNTwV1NWjvTtDjREVMqHF4lBoA5K_tBuUvOc09qi8_OT5vQ0FpMAHvsd-UyAaFNcED6SK3dF3C8sH9FxHe3ihQ17q30U2hAGrVv7ARo8WDdpUMcsoYFw7Os02XfcDyUUUEWwcrnxhCszk"/>
+                                <span class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-primary border border-primary-container">Ages 4 - 6 yrs</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm">
+                                    <span class="material-symbols-outlined text-xl">menu_book</span>
+                                </div>
+                                <h3 class="font-headline-md text-xl font-bold text-primary">Kindergarten (KG)</h3>
+                            </div>
+                            <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mb-4">Empowering future leaders with foundational literacy, numeracy, and school readiness.</p>
+
+                            <ul class="space-y-2.5 font-body-md text-sm text-on-surface-variant pt-2 border-t border-primary-container/30">
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">check_circle</span>
+                                    <span>Early reading fluency, writing &amp; spelling skills</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">check_circle</span>
+                                    <span>Math foundations, numbers, shapes &amp; patterns</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-primary text-base mt-0.5 shrink-0">check_circle</span>
+                                    <span>Science exploration &amp; structured problem solving</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-primary-container/20">
+                            <button onclick="openTourModal('Kindergarten')" class="w-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-white py-2.5 rounded-full font-label-md text-xs font-bold btn-press transition-colors">
+                                Inquire About Kindergarten
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Trial Banner -->
+                <div class="mt-14 p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-primary-container via-surface-container-low to-secondary-container border border-primary-container flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div>
+                        <h3 class="font-headline-lg text-2xl text-on-surface font-bold mb-2">Want to experience a live session?</h3>
+                        <p class="font-body-md text-on-surface-variant max-w-xl">We invite you and your child for a complimentary 45-minute interactive discovery classroom visit.</p>
+                    </div>
+                    <button onclick="openTourModal('Free Trial Session')" class="shrink-0 bg-secondary text-white px-8 py-3.5 rounded-full font-label-md font-bold shadow-md hover:bg-opacity-90 btn-press">
+                        Book a Free Trial Session
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SECTION 4: GALLERY ================= -->
+        <section id="gallery" class="scroll-mt-20 py-16 px-margin-mobile md:px-margin-desktop bg-surface-container-low/40 border-y border-primary-container/30">
+            <div class="max-w-[1280px] mx-auto">
+                <!-- Gallery Header -->
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <span class="text-xs uppercase tracking-wider font-bold text-secondary bg-secondary-container px-3 py-1 rounded-full">Moments of Joy</span>
+                    <h2 class="font-display-lg text-display-lg max-md:text-headline-lg-mobile text-primary mt-3 mb-3">Our Vibrant Gallery</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Explore joyful moments, creative expressions, nature adventures, and safe learning environments at Kanha Kids.
+                    </p>
+                </div>
+
+                <!-- Gallery Category Filter Pills -->
+                <div class="flex flex-wrap justify-center gap-2.5 mb-10" id="galleryFilters">
+                    <button onclick="filterGallery('all', this)" class="gallery-filter-btn active bg-primary text-on-primary font-label-md text-xs sm:text-sm px-5 py-2 rounded-full shadow-sm btn-press transition-all">All Photos</button>
+                    <button onclick="filterGallery('classroom', this)" class="gallery-filter-btn bg-surface-container text-on-surface font-label-md text-xs sm:text-sm px-5 py-2 rounded-full border border-primary-container hover:bg-primary-container transition-all btn-press">Classrooms</button>
+                    <button onclick="filterGallery('playtime', this)" class="gallery-filter-btn bg-surface-container text-on-surface font-label-md text-xs sm:text-sm px-5 py-2 rounded-full border border-primary-container hover:bg-primary-container transition-all btn-press">Playtime</button>
+                    <button onclick="filterGallery('arts', this)" class="gallery-filter-btn bg-surface-container text-on-surface font-label-md text-xs sm:text-sm px-5 py-2 rounded-full border border-primary-container hover:bg-primary-container transition-all btn-press">Creative Arts</button>
+                    <button onclick="filterGallery('events', this)" class="gallery-filter-btn bg-surface-container text-on-surface font-label-md text-xs sm:text-sm px-5 py-2 rounded-full border border-primary-container hover:bg-primary-container transition-all btn-press">Events &amp; Shows</button>
+                    <button onclick="filterGallery('music', this)" class="gallery-filter-btn bg-surface-container text-on-surface font-label-md text-xs sm:text-sm px-5 py-2 rounded-full border border-primary-container hover:bg-primary-container transition-all btn-press">Music &amp; Movement</button>
+                </div>
+
+                <!-- Masonry Gallery Grid -->
+                <div class="gallery-masonry" id="galleryContainer">
+                    <!-- Item 1: Classroom -->
+                    <div class="gallery-item rounded-2xl overflow-hidden border border-primary-container group relative cursor-pointer soft-shadow" data-category="classroom" onclick="openLightbox(this)" data-title="Interactive Learning Space" data-desc="Sunlit classroom with ergonomic wood furniture and curated learning corners.">
+                        <img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" alt="Interactive Classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa8mBW9_AHlo5igYfFp0Uf8ub03b4t-To_VvAbQndtZFmO8elV-FZHtm7pPBn4KlcaazwFkpHh99DZyvj5q8qG8SyceuRcE4aUQWTjDHI8eyGM-VtW-XByZ2AtHu2rQIf0fwXYUY2mndLYdEXCkRyviltlsH4XzyOulTlKUc_2L8mU7xsLbST6zp3o0PrkWBsTWOszwEwBo6fvbKEpNkbrVDhlW5mMkIYz18_VNj7dkY-3YlW20ro2"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-xs text-secondary-container font-semibold uppercase tracking-wider">Classrooms</span>
+                            <h4 class="text-white font-headline-md text-lg font-bold">Interactive Learning</h4>
+                            <p class="text-xs text-white/80">Click to view full photo</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Playtime (Outdoor) -->
+                    <div class="gallery-item rounded-2xl overflow-hidden border border-primary-container group relative cursor-pointer soft-shadow" data-category="playtime" onclick="openLightbox(this)" data-title="Outdoor Playground Adventures" data-desc="Soft rubberized playground surface with shaded slides and climbing towers.">
+                        <img class="w-full h-[380px] object-cover group-hover:scale-105 transition-transform duration-500" alt="Outdoor Playground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClZv2a441wgIHFbpu0rCO1vD6KiF20RsOT_YotyZQQgkQXZLIync4zISIlV4ZsoOTORoT0MZx6iNT4WjMRKUvG-jHfxlVZDJQZfDDMv6zYCv0ajViRANiEF6ZNn7sdumBNaLsrQn2xpIAp6ksYyVG-jiERkE5iMvIXYIIb04mp_4372xBS5VgsoKN8so6bbAB9r5hpu-DvjoNr5liYhw_0mNs82llCf5wuTFi68L9Ers36w6D-1cqn"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-xs text-secondary-container font-semibold uppercase tracking-wider">Playtime</span>
+                            <h4 class="text-white font-headline-md text-lg font-bold">Outdoor Adventures</h4>
+                            <p class="text-xs text-white/80">Click to view full photo</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Creative Arts -->
+                    <div class="gallery-item rounded-2xl overflow-hidden border border-primary-container group relative cursor-pointer soft-shadow" data-category="arts" onclick="openLightbox(this)" data-title="Creative Arts Workshop" data-desc="Joyful finger painting and texture discovery using non-toxic washable paints.">
+                        <img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" alt="Creative Arts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2vlxZeFRxGDgrE2LOLIRHUD448g1chbxOLyTufYCTwrJcdBWPzfZCNMOk4T_xB1zWzmwmmpP9uH5ioG-zazcrDz3FS1QfORuDGRZ0UGlF4l64V9IgRk3KT46TN5Xo6o7_OrvinX9xl28M2wXy55H9T0kOZnpbUy_eZGSbY_6gTGcX4S-V9ENV0KyTbrVTXqfYN--3ui4YbjJn54nMi8lSs6YO2xYm0tm9gTKsoCmIA66hZAiG1Vjd"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-xs text-secondary-container font-semibold uppercase tracking-wider">Creative Arts</span>
+                            <h4 class="text-white font-headline-md text-lg font-bold">Painting &amp; Craft</h4>
+                            <p class="text-xs text-white/80">Click to view full photo</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Events -->
+                    <div class="gallery-item rounded-2xl overflow-hidden border border-primary-container group relative cursor-pointer soft-shadow" data-category="events" onclick="openLightbox(this)" data-title="Annual Day Showcase" data-desc="Preschool stage celebrations featuring colorful sets, costumes, and parent community.">
+                        <img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" alt="Annual Celebrations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7jNWldQpj4bMmqbfcoRY4PBTNsXdyVoHkb-k3AI13r7RzuVVISa0hKfuHjRcURRnw4B8kRfoX3SjrhUte5LgCoxjPN33Ge07JQXZJF39Gq2FWtQhFsk7eGmokDXRiEbaDjS3F6Kvs6a8XadlIckjzdy79xNubHuvEHlM7xzoZXrxTiU6Q0vngx6F8aYHpvqBnjv_TGRlwhJDrXU7rYSH-dQbbQL8ZpQy9s7zFE5ZZ1-fz_xFdutZm"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-xs text-secondary-container font-semibold uppercase tracking-wider">Events</span>
+                            <h4 class="text-white font-headline-md text-lg font-bold">Annual Celebrations</h4>
+                            <p class="text-xs text-white/80">Click to view full photo</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Playtime (Sensory) -->
+                    <div class="gallery-item rounded-2xl overflow-hidden border border-primary-container group relative cursor-pointer soft-shadow" data-category="playtime" onclick="openLightbox(this)" data-title="Tactile Sensory Exploration" data-desc="Kinetic sand, water beads, and natural texture trays for early sensory milestones.">
+                        <img class="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-500" alt="Sensory Play" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmGax28vSLHM-eGwFjt4728ITjY3cVMJhj6tXR2GCXRq3ug5FpwLK7b9OcjDd4h1T-HeNpT7h0M0p-sTCtVH45PEXA097Q86YUBwj_VWsj0cFkBVH9GZDN6ii_anXzuxR2XEA2JoRnPvwj8KTIALThVmM8glfLhWcJtBkYbacZRguBl8AxHHHijlLkOUHlkPzY7fTBu1rdb6mWlQT78yrFU17uAWws_Ieiqt0jmkqkayUQRi9ZEhiw"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-xs text-secondary-container font-semibold uppercase tracking-wider">Playtime</span>
+                            <h4 class="text-white font-headline-md text-lg font-bold">Sensory Discovery</h4>
+                            <p class="text-xs text-white/80">Click to view full photo</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Music -->
+                    <div class="gallery-item rounded-2xl overflow-hidden border border-primary-container group relative cursor-pointer soft-shadow" data-category="music" onclick="openLightbox(this)" data-title="Rhythm &amp; Music Sessions" data-desc="Xylophones, tambourines, and singing circles fostering ear training and joy.">
+                        <img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" alt="Music Corner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtOODf760EgXe5FekSFIYxP6H50KspLF1GYehPmx9OxcEl9rhcXllU63qwzA0WCw5xgTdpD2JRp37fypzpB2vlvnv3atMPpS4-U8z-WBV6pD7dgQXhVtZxmS2sGpVIyCEsok-ptzSjSNUSXEeHFPYDEpNrAVHmr2CBjuGUipcEFSoDuVPCpgg8CM4D8QRf4nWQfkZqqoPERBh67ZvOcFODqU8Wzr47hDyP1kSwXnclatieWg58LesJ"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-xs text-secondary-container font-semibold uppercase tracking-wider">Music</span>
+                            <h4 class="text-white font-headline-md text-lg font-bold">Music &amp; Rhythm</h4>
+                            <p class="text-xs text-white/80">Click to view full photo</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: Classroom (Story Time) -->
+                    <div class="gallery-item rounded-2xl overflow-hidden border border-primary-container group relative cursor-pointer soft-shadow" data-category="classroom" onclick="openLightbox(this)" data-title="Story Circle &amp; Early Reading" data-desc="Gathering around our cozy carpet for enchanting picture book journeys.">
+                        <img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" alt="Story time" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXKN5NWnz0CcDN2VbH0er5dFUZclZIbAAwvI-QKBFvbyMoyr3sV-P7lSXE7uRbAfFOF9blEdHnJHgJxpar9scKhv8-NFGmN7X1VgmXswvFi8OAYz2gqrU3ZG5_N0AzappIuSihLOHxbIX1VntFoMD80kwH5RHvPDBshE_CJro03J3Zpz96piVA9F67VX-buIbwDrp3bDHc_P1zOwdRwtbjF6dN2P58-6MAwLvHKQFibYXShC73vDdr"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-xs text-secondary-container font-semibold uppercase tracking-wider">Classrooms</span>
+                            <h4 class="text-white font-headline-md text-lg font-bold">Story Time</h4>
+                            <p class="text-xs text-white/80">Click to view full photo</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 8: Creative Arts (Finger Painting) -->
+                    <div class="gallery-item rounded-2xl overflow-hidden border border-primary-container group relative cursor-pointer soft-shadow" data-category="arts" onclick="openLightbox(this)" data-title="Expressive Color Experiments" data-desc="Hands-on color mixing and abstract artwork development.">
+                        <img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" alt="Finger painting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfH4d9eUdSiO7N3rE5fDTQ0N0kz9rXfo1db9OPj7Y8SwM2sbrcQETvDxVCK-JY8VUXCynT9PXuMPi7KiaraE4_w5ABWyEB1uNReftW_vLPWYvkmk9fL9SnzWqu68k820JdRlfzKrS0AUoTDG4DIBPfzyJSKfKDOCBWVJsmiwmJbCtf_3VUCs61j07wXzYoeWPg54sAWNOQarp4N5dpqa704ggNMyyCtB82M-WtSEq-3EtTpX_s1EK7"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-xs text-secondary-container font-semibold uppercase tracking-wider">Creative Arts</span>
+                            <h4 class="text-white font-headline-md text-lg font-bold">Finger Painting</h4>
+                            <p class="text-xs text-white/80">Click to view full photo</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: Playtime (Building Blocks) -->
+                    <div class="gallery-item rounded-2xl overflow-hidden border border-primary-container group relative cursor-pointer soft-shadow" data-category="playtime" onclick="openLightbox(this)" data-title="Architects of Tomorrow" data-desc="Building geometric towers with tactile wooden blocks, developing spatial intelligence.">
+                        <img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" alt="Building blocks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEhsm8yvsDyjrI8SSgl-2iXV2eX8MqPwldgWfGGD9oixT7bu64aGbOQoXmBPwGOCM0nYvjarhW6I-sIVZ1PdpL8SW_Hn3nGVf96v9Xs2V_t54hnrc8mte3w65TbogW5XhgHwGSsgS88X0vmwGGVuaZUbr0V5nV7SuXR_bT5UemBvrfCQnJwAVFKslaX9VuxyrILVUoDBDyFS66UgyI7nAAfa-tZFthm7yP5qoAjtvHidQQLHb6prxZ"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                            <span class="text-xs text-secondary-container font-semibold uppercase tracking-wider">Playtime</span>
+                            <h4 class="text-white font-headline-md text-lg font-bold">Wooden Blocks Engineering</h4>
+                            <p class="text-xs text-white/80">Click to view full photo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SECTION 5: ADMISSIONS & CONTACT ================= -->
+        <section id="admissions" class="scroll-mt-20 py-16 px-margin-mobile md:px-margin-desktop relative">
+            <div class="max-w-[1280px] mx-auto">
+                <!-- Admissions Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-xs uppercase tracking-wider font-bold text-tertiary bg-tertiary-container px-3 py-1 rounded-full">Enroll Today</span>
+                    <h2 class="font-display-lg text-display-lg max-md:text-headline-lg-mobile text-primary mt-3 mb-3">Join Our Kanha Family</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Begin your child's wondrous journey of safe exploration, laughter, and lifelong learning foundations.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                    <!-- Left: 4-Step Process Roadmap (5 cols) -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <h3 class="font-headline-lg text-2xl text-primary font-bold mb-2">Admissions Process</h3>
+                            <p class="font-body-md text-sm text-on-surface-variant">A warm, friendly 4-step journey for you and your little one to get to know our school.</p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <!-- Step 1 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-primary-container soft-shadow">
+                                <div class="w-10 h-10 rounded-full bg-primary-container text-primary flex items-center justify-center font-bold text-base shrink-0 shadow-sm">
+                                    1
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-md text-base text-on-surface font-bold">1. Schedule a Campus Visit</h4>
+                                    <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1">Tour our vibrant classrooms, meet educators, and observe live play sessions.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-primary-container soft-shadow">
+                                <div class="w-10 h-10 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-bold text-base shrink-0 shadow-sm">
+                                    2
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-md text-base text-on-surface font-bold">2. Submit Simple Inquiry</h4>
+                                    <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1">Fill out the quick enrollment form online or directly during your school tour.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-primary-container soft-shadow">
+                                <div class="w-10 h-10 rounded-full bg-tertiary-container text-tertiary flex items-center justify-center font-bold text-base shrink-0 shadow-sm">
+                                    3
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-md text-base text-on-surface font-bold">3. Informal Child Interaction</h4>
+                                    <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1">A gentle, joyful play interaction for us to understand your child's preferences.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="flex items-start gap-4 p-4 rounded-2xl bg-surface-container-lowest border border-primary-container soft-shadow">
+                                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-base shrink-0 shadow-sm">
+                                    4
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-md text-base text-on-surface font-bold">4. Welcome to Kanha!</h4>
+                                    <p class="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1">Finalize enrollment kit, receive school calendar, and join our parent community.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Direct Contact Card -->
+                        <div class="p-6 rounded-2xl bg-surface-container-low border border-primary-container/60 mt-6">
+                            <h4 class="font-headline-md text-base text-primary font-bold mb-3 flex items-center gap-2">
+                                <span class="material-symbols-outlined fill text-secondary">contact_phone</span> Direct Contact Information
+                            </h4>
+                            <div class="space-y-3 font-body-md text-sm text-on-surface-variant">
+                                <div class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-primary text-lg mt-0.5">location_on</span>
+                                    <span>Beetha Mandir Gali, Kaithal Road, Naguran 126125</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                                    <a href="mailto:helpdesk@kkps.com" class="hover:text-primary underline">helpdesk@kkps.com</a>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="material-symbols-outlined text-primary text-lg">call</span>
+                                    <a href="tel:+91 89504 73834" class="hover:text-primary font-bold">+91 89504 73834</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Inquiry Form (7 cols) -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-surface-container-lowest p-6 sm:p-10 rounded-3xl border border-primary-container/60 soft-shadow-lg">
+                            <div class="flex items-center justify-between mb-6 pb-4 border-b border-primary-container/30">
+                                <div>
+                                    <h3 class="font-headline-lg text-2xl text-primary font-bold">Online Admission Inquiry</h3>
+                                    <p class="font-body-md text-xs sm:text-sm text-on-surface-variant">Receive our complete prospectus and fee details immediately.</p>
+                                </div>
+                                <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+                                    <span class="material-symbols-outlined fill text-2xl">edit_document</span>
+                                </div>
+                            </div>
+
+                            <form id="inquiryForm" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block font-label-md text-xs sm:text-sm text-primary font-bold mb-1.5" for="parentName">Parent / Guardian Name *</label>
+                                        <input required class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2.5 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="parentName" placeholder="e.g. Anjali Sharma" type="text"/>
+                                    </div>
+                                    <div>
+                                        <label class="block font-label-md text-xs sm:text-sm text-primary font-bold mb-1.5" for="childName">Child's Name *</label>
+                                        <input required class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2.5 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="childName" placeholder="e.g. Aarav" type="text"/>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block font-label-md text-xs sm:text-sm text-primary font-bold mb-1.5" for="childAgeGroup">Child's Age Group / Class *</label>
+                                        <select required class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2.5 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="childAgeGroup">
+                                            <option disabled selected value="">Select age group</option>
+                                            <option value="Toddler Playgroup (1.5 - 3 yrs)">Toddler Playgroup (1.5 - 3 yrs)</option>
+                                            <option value="Nursery (3 - 4 yrs)">Nursery (3 - 4 yrs)</option>
+                                            <option value="Kindergarten (4 - 6 yrs)">Kindergarten (4 - 6 yrs)</option>
+                                            <option value="Daycare / Extended Care">Daycare / Extended Care</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block font-label-md text-xs sm:text-sm text-primary font-bold mb-1.5" for="parentPhone">Phone Number *</label>
+                                        <input required class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2.5 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="parentPhone" placeholder="+91 98765 98765" type="tel"/>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block font-label-md text-xs sm:text-sm text-primary font-bold mb-1.5" for="parentEmail">Email Address</label>
+                                    <input class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2.5 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none" id="parentEmail" placeholder="anjali.sharma@example.com" type="email"/>
+                                </div>
+
+                                <div>
+                                    <label class="block font-label-md text-xs sm:text-sm text-primary font-bold mb-1.5" for="message">Questions or Special Requests</label>
+                                    <textarea class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2.5 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none resize-none" id="message" rows="3" placeholder="Tell us anything about your child's preferences, transport requirements, or specific questions..."></textarea>
+                                </div>
+
+                                <button class="w-full bg-[#f97316] text-white font-label-md text-base font-bold py-3.5 rounded-full hover:bg-[#ea580c] transition-colors border-b-2 border-[#c2410c] active:border-b-0 active:translate-y-[2px] btn-press shadow-md flex items-center justify-center gap-2" type="submit">
+                                    <span class="material-symbols-outlined text-xl">send</span>
+                                    <span>Submit Admission Inquiry</span>
+                                </button>
+                                
+                                <p class="text-center text-xs text-on-surface-variant">
+                                    🔒 Your information is confidential. We never share details with third parties.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-surface-container-lowest border-t border-primary-container/50 w-full mt-auto">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+                <!-- Brand Column -->
+                <div class="md:col-span-2 flex flex-col gap-3">
+                    <a class="flex items-center gap-2 font-display-lg text-headline-md text-primary font-bold" href="#home">
+                        <span class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                            <span class="material-symbols-outlined fill text-xl">child_care</span>
+                        </span>
+                        <span>Kanha Kids Play School</span>
+                    </a>
+                    <p class="font-body-md text-sm text-on-surface-variant max-w-md leading-relaxed">
+                        Nurturing curiosity, inspiring joy, and building lifelong learning foundations in a secure, loving early childhood environment.
+                    </p>
+                    <div class="flex items-center gap-2 mt-2">
+                        <a href="tel:+91 89504 73834" class="w-9 h-9 rounded-full bg-primary-container text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors" title="Call Us">
+                            <span class="material-symbols-outlined fill text-sm">call</span>
+                        </a>
+                        <a href="mailto:helpdesk@kkps.com" class="w-9 h-9 rounded-full bg-primary-container text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors" title="Email Us">
+                            <span class="material-symbols-outlined fill text-sm">mail</span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/tJcd24VrwuzgKPdS8" class="w-9 h-9 rounded-full bg-primary-container text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors" title="Location">
+                            <span class="material-symbols-outlined fill text-sm">location_on</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation Column -->
+                <div class="flex flex-col gap-2.5">
+                    <h4 class="font-label-md text-sm font-bold text-primary uppercase tracking-wider mb-1">Explore</h4>
+                    <a class="font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#home">Home</a>
+                    <a class="font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#about">About Us</a>
+                    <a class="font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#programs">Programs &amp; Tracks</a>
+                    <a class="font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#gallery">Photo Gallery</a>
+                    <a class="font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#admissions">Admissions &amp; Contact</a>
+                </div>
+
+                <!-- Programs Quick Links -->
+                <div class="flex flex-col gap-2.5">
+                    <h4 class="font-label-md text-sm font-bold text-primary uppercase tracking-wider mb-1">Programs</h4>
+                    <a class="font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#programs">Toddler Playgroup (2-3 yrs)</a>
+                    <a class="font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#programs">Nursery (3-4 yrs)</a>
+                    <a class="font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#programs">Kindergarten (4-6 yrs)</a>
+                    <a class="font-body-md text-sm text-on-surface-variant hover:text-primary transition-colors" href="#programs">Extended Day Care</a>
+                </div>
+            </div>
+
+            <!-- Bottom Legal Bar -->
+            <div class="pt-6 border-t border-primary-container/40 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-on-surface-variant">
+                <p>© 2024–2026 Kanha Kids Play School. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#about" class="hover:underline">Privacy Policy</a>
+                    <a href="#about" class="hover:underline">Terms of Service</a>
+                    <a href="#admissions" class="hover:underline">Safety Protocols</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= MODALS & TOASTS ================= -->
+
+    <!-- Schedule a Tour Modal -->
+    <div id="tourModal" class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-surface rounded-3xl max-w-lg w-full p-6 sm:p-8 soft-shadow-lg border border-primary-container transform scale-95 transition-transform duration-300" id="tourModalContent">
+            <div class="flex justify-between items-center mb-4 pb-3 border-b border-primary-container/30">
+                <div class="flex items-center gap-2">
+                    <span class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                        <span class="material-symbols-outlined fill text-xl">event_available</span>
+                    </span>
+                    <div>
+                        <h3 class="font-headline-md text-xl font-bold text-primary">Schedule a Campus Tour</h3>
+                        <p class="font-caption text-xs text-on-surface-variant">Experience our joyful classrooms in person</p>
+                    </div>
+                </div>
+                <button onclick="closeTourModal()" class="p-2 text-on-surface-variant hover:text-primary rounded-full">
+                    <span class="material-symbols-outlined text-2xl">close</span>
+                </button>
+            </div>
+
+            <form onsubmit="handleTourSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block font-label-md text-xs text-primary font-bold mb-1" for="tourParentName">Your Name *</label>
+                    <input required class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2 text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none" id="tourParentName" placeholder="Parent's Name" type="text"/>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block font-label-md text-xs text-primary font-bold mb-1" for="tourPhone">Phone Number *</label>
+                        <input required class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2 text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none" id="tourPhone" placeholder="+91 98765 98765" type="tel"/>
+                    </div>
+                    <div>
+                        <label class="block font-label-md text-xs text-primary font-bold mb-1" for="tourTrack">Interested Track</label>
+                        <select class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2 text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none" id="tourTrack">
+                            <option value="Toddler Playgroup">Toddler Playgroup (2-3 yrs)</option>
+                            <option value="Nursery">Nursery (3-4 yrs)</option>
+                            <option value="Kindergarten">Kindergarten (4-6 yrs)</option>
+                            <option value="General Campus Tour">General Campus Tour</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block font-label-md text-xs text-primary font-bold mb-1" for="tourDate">Preferred Date *</label>
+                        <input required class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2 text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none" id="tourDate" type="date"/>
+                    </div>
+                    <div>
+                        <label class="block font-label-md text-xs text-primary font-bold mb-1" for="tourTime">Preferred Time Slot *</label>
+                        <select required class="w-full rounded-xl border border-outline-variant bg-surface-bright text-body-md font-body-md px-3.5 py-2 text-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none" id="tourTime">
+                            <option value="Morning: 9:30 AM - 10:30 AM">Morning: 9:30 AM - 10:30 AM</option>
+                            <option value="Midday: 11:30 AM - 12:30 PM">Midday: 11:30 AM - 12:30 PM</option>
+                            <option value="Afternoon: 2:00 PM - 3:00 PM">Afternoon: 2:00 PM - 3:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="w-full bg-[#f28e2b] text-white font-label-md text-sm font-bold py-3 rounded-full hover:bg-[#ea580c] transition-colors btn-press shadow-md mt-2 flex items-center justify-center gap-2" type="submit">
+                    <span class="material-symbols-outlined text-lg">check_circle</span>
+                    <span>Confirm Tour Booking</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="lightboxModal" class="fixed inset-0 bg-inverse-surface/90 backdrop-blur-md z-50 hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4" onclick="closeLightbox(event)">
+        <div class="relative max-w-4xl w-full bg-surface rounded-2xl overflow-hidden shadow-2xl border border-primary-container" onclick="event.stopPropagation()">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 z-20 bg-inverse-surface/70 text-white hover:bg-inverse-surface p-2 rounded-full transition-colors">
+                <span class="material-symbols-outlined text-2xl">close</span>
+            </button>
+            <div class="max-h-[75vh] w-full bg-black flex items-center justify-center overflow-hidden">
+                <img id="lightboxImg" class="max-h-[75vh] w-full object-contain" src="" alt="Gallery Preview"/>
+            </div>
+            <div class="p-5 bg-surface border-t border-primary-container/30">
+                <h4 id="lightboxTitle" class="font-headline-md text-xl font-bold text-primary">Title</h4>
+                <p id="lightboxDesc" class="font-body-md text-sm text-on-surface-variant mt-1">Description</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action / Back to Top Button -->
+    <button id="backToTopBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})" aria-label="Scroll to top" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-primary text-white shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 btn-press hover:bg-opacity-90">
+        <span class="material-symbols-outlined text-2xl">arrow_upward</span>
+    </button>
+
+    <!-- Interactive Toast Notification -->
+    <div id="toastNotification" class="fixed bottom-6 left-1/2 -translate-x-1/2 sm:left-auto sm:right-6 sm:translate-x-0 z-50 bg-inverse-surface text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 border border-primary-container/30 transform translate-y-24 opacity-0 transition-all duration-300">
+        <span id="toastIcon" class="material-symbols-outlined text-tertiary-fixed text-2xl fill">check_circle</span>
+        <div>
+            <p id="toastTitle" class="font-label-md text-sm font-bold">Success!</p>
+            <p id="toastMessage" class="font-caption text-xs text-white/80">Action completed successfully.</p>
+        </div>
+    </div>
+
+    <!-- ================= CLIENT JAVASCRIPT ================= -->
+    <script>
+        // 1. Mobile Menu Management
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuDrawer = document.getElementById('mobileMenuDrawer');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeMobileMenuBtn = document.getElementById('closeMobileMenuBtn');
+
+        function openMobileMenu() {
+            mobileMenuOverlay.classList.remove('hidden');
+            setTimeout(() => {
+                mobileMenuOverlay.classList.remove('opacity-0');
+                mobileMenuDrawer.classList.remove('translate-x-full');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenuOverlay.classList.add('opacity-0');
+            mobileMenuDrawer.classList.add('translate-x-full');
+            setTimeout(() => {
+                mobileMenuOverlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        closeMobileMenuBtn.addEventListener('click', closeMobileMenu);
+        mobileMenuOverlay.addEventListener('click', (e) => {
+            if (e.target === mobileMenuOverlay) closeMobileMenu();
+        });
+
+        // 2. ScrollSpy & Active Link Indicator
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            const backToTopBtn = document.getElementById('backToTopBtn');
+
+            if (scrollY > 400) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+            }
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.offsetHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold', 'border-b-2', 'border-primary');
+                link.classList.add('text-on-surface-variant', 'font-medium');
+                if (link.getAttribute('data-target') === current) {
+                    link.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary');
+                    link.classList.remove('text-on-surface-variant', 'font-medium');
+                }
+            });
+        });
+
+        // 3. Gallery Category Filter
+        function filterGallery(category, btnElement) {
+            document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-primary', 'text-on-primary');
+                btn.classList.add('bg-surface-container', 'text-on-surface');
+            });
+            btnElement.classList.add('active', 'bg-primary', 'text-on-primary');
+            btnElement.classList.remove('bg-surface-container', 'text-on-surface');
+
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                const itemCat = item.getAttribute('data-category');
+                if (category === 'all' || itemCat === category) {
+                    item.classList.remove('hidden-item');
+                } else {
+                    item.classList.add('hidden-item');
+                }
+            });
+        }
+
+        // 4. Gallery Lightbox Modal
+        const lightboxModal = document.getElementById('lightboxModal');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxDesc = document.getElementById('lightboxDesc');
+
+        function openLightbox(item) {
+            const img = item.querySelector('img');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightboxTitle.textContent = item.getAttribute('data-title') || img.alt;
+            lightboxDesc.textContent = item.getAttribute('data-desc') || '';
+
+            lightboxModal.classList.remove('hidden');
+            setTimeout(() => {
+                lightboxModal.classList.remove('opacity-0');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightboxModal.classList.add('opacity-0');
+            setTimeout(() => {
+                lightboxModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        // 5. Schedule Tour Modal
+        const tourModal = document.getElementById('tourModal');
+        const tourModalContent = document.getElementById('tourModalContent');
+
+        function openTourModal(trackName = '') {
+            if (trackName) {
+                const trackSelect = document.getElementById('tourTrack');
+                if (trackSelect) {
+                    for (let i = 0; i < trackSelect.options.length; i++) {
+                        if (trackSelect.options[i].value.includes(trackName)) {
+                            trackSelect.selectedIndex = i;
+                            break;
+                        }
+                    }
+                }
+            }
+            // Set default date to tomorrow
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            document.getElementById('tourDate').value = tomorrow.toISOString().split('T')[0];
+
+            tourModal.classList.remove('hidden');
+            setTimeout(() => {
+                tourModal.classList.remove('opacity-0');
+                tourModalContent.classList.remove('scale-95');
+                tourModalContent.classList.add('scale-100');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeTourModal() {
+            tourModal.classList.add('opacity-0');
+            tourModalContent.classList.remove('scale-100');
+            tourModalContent.classList.add('scale-95');
+            setTimeout(() => {
+                tourModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        function handleTourSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('tourParentName').value;
+            const date = document.getElementById('tourDate').value;
+            const time = document.getElementById('tourTime').value;
+            
+            closeTourModal();
+            showToast('Tour Scheduled!', `Thank you ${name}! Your school tour is reserved for ${date} (${time}). We look forward to meeting you!`, 'event_available');
+            e.target.reset();
+        }
+
+        // 6. Inquiry Form Submit
+        function handleInquirySubmit(e) {
+            e.preventDefault();
+            const parentName = document.getElementById('parentName').value;
+            const childName = document.getElementById('childName').value;
+            const ageGroup = document.getElementById('childAgeGroup').value;
+
+            showToast('Inquiry Submitted!', `Thank you ${parentName}! We have received your admission inquiry for ${childName} (${ageGroup}). Our admissions team will reach out shortly.`, 'mark_email_read');
+            e.target.reset();
+        }
+
+        // 7. Toast Alert Functionality
+        let toastTimeout;
+        function showToast(title, message, icon = 'check_circle') {
+            const toast = document.getElementById('toastNotification');
+            document.getElementById('toastTitle').textContent = title;
+            document.getElementById('toastMessage').textContent = message;
+            document.getElementById('toastIcon').textContent = icon;
+
+            clearTimeout(toastTimeout);
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
